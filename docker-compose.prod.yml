@@ -1,0 +1,19 @@
+networks:
+  # Réseau Docker partagé avec Nginx Proxy Manager sur le VPS
+  # (même réseau que les autres sites : webproject, restos, artstock, ...).
+  proxy_network:
+    external: true
+
+services:
+  site:
+    image: ${IMAGE}
+    container_name: brackets-studio
+    restart: unless-stopped
+    networks:
+      - proxy_network
+    environment:
+      SITE_BASE_URL: https://brackets-studio.be
+    # Pas de "ports:" ici : le container n'est jamais exposé directement sur le VPS.
+    # Nginx Proxy Manager (http://<VPS_IP>:81) le joint via le réseau proxy_network,
+    # en ciblant "brackets-studio:8080" comme Forward Hostname/Port dans un Proxy Host —
+    # voir DEPLOY.md pour la configuration exacte une fois le DNS prêt.

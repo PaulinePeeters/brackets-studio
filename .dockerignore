@@ -1,0 +1,11 @@
+.git
+.gitignore
+*.md
+brackets-studio-site-mockup.html
+brackets-studio-logo.jpg
+brackets-studio-logo.svg
+brackets-wordmark.svg
+banniere-linkedin-brackets-studio*.jpg
+Logo/
+.DS_Store
+docker-compose*.yml

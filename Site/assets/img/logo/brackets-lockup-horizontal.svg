@@ -1,0 +1,9 @@
+<svg viewBox="0 0 580 160" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica Neue, Arial, sans-serif">
+  <rect x="0" y="10" width="140" height="140" rx="26" fill="#24262B"/>
+  <g transform="translate(0,10)" stroke="#FF6A2B" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M61,28 L39,28 L39,60 L22,70 L39,80 L39,112 L61,112"/>
+    <path d="M79,28 L101,28 L101,60 L118,70 L101,80 L101,112 L79,112"/>
+  </g>
+  <text x="165" y="98" font-size="56" font-weight="800" letter-spacing="1" fill="#24262B">BRACKETS</text>
+  <text x="167" y="130" font-size="20" font-weight="600" letter-spacing="6" fill="#FF6A2B">STUDIO</text>
+</svg>
